@@ -14,6 +14,7 @@ const (
 
 func main() {
 	config := nsq.NewConfig()
+	// nsqd tcp addr
 	addr := "127.0.0.1:4150"
 	producer, err := nsq.NewProducer(addr, config)
 	if err != nil {
